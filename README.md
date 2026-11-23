@@ -1,6 +1,8 @@
-# Vite Boilerplate
+# DistriLux Portal Web
 
-A scalable foundation for React single-page applications that consume external APIs. The repository enforces architectural boundaries while providing routing, server-state management, testing, CI, and production-ready static delivery.
+Web portal of the DistriLux order portal (PTA Tech 26.2) for sellers, the commercial manager, finance, and the admin. Project rules are in [AGENTS.md](AGENTS.md); repository layout is in ADR 0001 of the backend repository.
+
+It is built on the CITi Vite boilerplate: a scalable foundation for React single-page applications that consume external APIs. The repository enforces architectural boundaries while providing routing, server-state management, testing, CI, and production-ready static delivery.
 
 ## Included
 
@@ -62,7 +64,7 @@ All frontend environment values are public and embedded during `vite build`:
 
 | Variable        | Default                 | Purpose                        |
 | --------------- | ----------------------- | ------------------------------ |
-| `VITE_APP_NAME` | `Vite Boilerplate`      | Browser title and display name |
+| `VITE_APP_NAME` | `DistriLux Portal`      | Browser title and display name |
 | `VITE_APP_URL`  | `http://localhost:5173` | Public application URL         |
 | `VITE_API_URL`  | `http://localhost:3001` | pta-api base URL (no path)     |
 
