@@ -88,7 +88,7 @@
 - Client: DistriLux, an electrical-materials distributor in Recife that sells on credit to about 120 companies in eight Northeast states. This is the PTA Tech 26.2 challenge (2026-11-23 to 2026-12-12).
 - Product: an internal order portal connected to the client's ERP, with a sales dashboard, a manager mobile app, an AI document-triage agent, and a churn-risk model.
 - Repositories: `PTA-Squad-Matheus-Lins-Backend` (API, ERP sync, AI agent, history load, `ml/` churn model), `PTA-Squad-Matheus-Lins-web` (portal), and `PTA-Squad-Matheus-Lins-Mobile` (manager app). See ADR 0001 in the backend.
-- Scope comes from the PRD: user stories `US-001`–`US-028` and business rules `RN-01`–`RN-20`. Work is tracked as features `F00`–`F13`; cite the feature, story, and rule IDs in OpenSpec changes, tests, and pull requests.
+- Scope comes from the PRD: user stories `US-001`–`US-028` and business rules `RN-01`–`RN-20`. Work is tracked as features `F01`–`F28` in DocuData, one per user story (`Fnn` maps to `US-0nn`, for example `F02` is `US-002`); cite the feature, story, and rule IDs in OpenSpec changes, tests, and pull requests.
 - The ERP is the system of record. The portal reads customers, products, and receivables (títulos) and only writes orders. When legacy spreadsheets and the ERP disagree, the ERP wins (RN-09).
 - ERP amounts are integer cents; always display Brazilian reais, for example `R$ 1.234,56` (RN-13).
 - Roles: seller (vendedor) sees only their own portfolio; manager (gerente) and finance (financeiro) see every portfolio; admin manages users and the history load. Authorization is enforced by the API (RN-08).
@@ -96,7 +96,7 @@
 
 ## Team conventions
 
-- Branches: `feat/<feature-id>-<short-name>` (for example `feat/f04-order-builder`), `fix/<short-name>`, or `chore/<short-name>`.
+- Branches: `feat/<feature-id>-<short-name>` (for example `feat/f05-order-builder`), `fix/<short-name>`, or `chore/<short-name>`.
 - Every change reaches the default branch through a pull request with one approval and green CI.
 - Repository artifacts stay in English; communicate with people in Brazilian Portuguese.
 
