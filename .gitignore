@@ -37,3 +37,6 @@ yarn-error.log*
 
 # generated mirror of .agents/skills/citi-* (see scripts/check-agent-skills.mjs)
 /.claude/skills/citi-*
+
+# editor settings
+.vscode/
