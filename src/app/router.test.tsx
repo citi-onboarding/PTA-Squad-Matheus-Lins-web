@@ -4,19 +4,8 @@ import { describe, expect, it } from "vitest";
 
 import { routes } from "./router";
 
+// The sign-in, protected, and role routes are covered in auth-flow.test.tsx.
 describe("application router", () => {
-  it("renders the home route", () => {
-    const router = createMemoryRouter(routes, { initialEntries: ["/"] });
-
-    render(<RouterProvider router={router} />);
-
-    expect(
-      screen.getByRole("heading", {
-        name: /start with enforced architecture/i,
-      }),
-    ).toBeInTheDocument();
-  });
-
   it("renders the not-found route", () => {
     const router = createMemoryRouter(routes, {
       initialEntries: ["/missing-route"],
