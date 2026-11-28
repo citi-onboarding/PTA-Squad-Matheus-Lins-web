@@ -28,8 +28,9 @@ to date as the change evolves.
 
 ## Index
 
-| Change ID | Title | Status | Related ADRs |
-| --------- | ----- | ------ | ------------ |
+| Change ID                 | Title                                           | Status      | Related ADRs |
+| ------------------------- | ----------------------------------------------- | ----------- | ------------ |
+| [f01-login](f01-login.md) | Sign-in page and protected routes in the portal | in-progress | —            |
 
 <!--
 Add one row per change doc.
